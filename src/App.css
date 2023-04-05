@@ -1,38 +1,83 @@
-.App {
+.container-app {
+  margin: 100px auto;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.row-toggle, .row-dictionary, .row-footer {
+  padding: 20px;
+  margin: 0 30px;
+}
+
+.row-toggle {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.toggle-image {
+  width: 50px;
+}
+
+.row-dictionary {
   text-align: center;
+  margin-top: 80px;
+  margin-bottom: 240px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row-dictionary .title-d {
+  color: var(--text-color);
+  font-family: var(--secondary-font);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  color: var(--accent-color);
+  padding-left: 1px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-group {
+width: 100%;
+display: flex;
+align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.input-group button {
+border: none;
+padding-left: 0;
+border-radius: 4px 0 0 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-group button svg {
+  width: 16px;
+  height: 16px;
+  background-color: #f2f2f2;
+  padding: 8px 0 8px 8px;
 }
+
+input {
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+  border: none;
+  width: 100%;
+  border-radius: 0 4px 4px 0;
+  font-family: var(--secondary-font);
+}
+
+
+.row-footer p {
+  font-family: var(--secondary-font);
+  font-size: 10px;
+  margin: 0;
+}
+
+.row-footer a {
+  color: var(--text-color);
+}
+
+.row-footer a:hover{
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
